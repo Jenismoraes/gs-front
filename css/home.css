@@ -1,0 +1,459 @@
+/* container  */
+.container {
+  width: 100%;
+  background-color: gray;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 40%;
+}
+
+/* Menu / navbar */
+.nav-bar {
+  width: 100%;
+  height: 110px;
+  padding: 1.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-title {
+  font-size: clamp(40px, 2vw, 35px);
+  color: var(--title-color);
+}
+
+.section-description {
+  font-size: 18px;
+  color: var(--font-primary-color);
+}
+
+.section-footer {
+  color: var(--font-secondary-color);
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.section-photo {
+  box-shadow: 1px 1px 30px #aaa;
+  border-radius: 7px;
+  max-width: 100%;
+}
+
+.nav-bar ul,
+li,
+a {
+  display: flex;
+  gap: 30px;
+  color: var(--color-bg);
+  text-decoration: none;
+  font-family: var(--font-family);
+
+  && :hover {
+    color: var(--title-color);
+  }
+}
+
+.mobile-menu-icon,
+.mobile-menu {
+  display: none;
+}
+
+.logo-home img {
+  display: flex;
+  width: 270px;
+  transform: scale(1.7);
+  position: relative;
+  top: 50px;
+  left: 70px;
+}
+
+.hero {
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  color: var(--color-bg);
+  text-align: center;
+  font-family: var(--font-family);
+
+  & h2 {
+    color: var(--color-bg);
+    font-size: 71px;
+    word-break: break-word;
+    line-height: 1;
+  }
+
+  p {
+    font-size: 22px;
+  }
+}
+
+.hero .btn-container {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  border-radius: 50px;
+  padding: 8px 30px;
+  border: 2px solid var(--color-bg);
+  background-color: transparent;
+  color: var(--color-bg);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn:hover {
+  color: var(--title-color);
+  border: 2px solid var(--title-color);
+}
+
+.btn_2 {
+  border-radius: 50px;
+  padding: 8px 30px;
+  background-color: var(--title-color);
+  color: var(--color-bg);
+  border: 0px solid var(--color-primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn_2:hover {
+  color: var(--font-primary-color);
+  background-color: var(--color-bg);
+}
+/* FIM container */
+
+/* Proteja os oceanos conosco */
+.problem-session {
+  max-width: 1000px;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  flex-wrap: wrap;
+  font-family: var(--font-family);
+}
+
+.problem-photo {
+  width: 45%;
+  text-align: center;
+  margin: 0;
+}
+
+.problem-text {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.problem-text h2 {
+  text-wrap: balance;
+  line-height: 1;
+  text-align: right;
+}
+
+.problem-text p {
+  width: 100%;
+  text-align: right;
+}
+
+/* fim Proteja os oceanos conosco */
+
+/* Nosso trabalho. */
+.work-session {
+  background: var(--color-bg);
+  text-align: center;
+  font-family: var(--font-family);
+}
+
+.text-center {
+  background: var(--color-secondary);
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.section-container {
+  display: flex;
+  align-items: center;
+}
+
+.section-container-reversed {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+
+  .section-title {
+    text-align: right;
+  }
+
+  .section-description {
+    text-align: right;
+  }
+}
+
+.section-photo-container {
+  flex: 1;
+}
+
+.section-photo-container img {
+  transform: scale(0.9);
+}
+
+.section-content {
+  flex: 1;
+  padding: 3rem 1rem;
+  text-align: left;
+}
+/* fim Nosso trabalho. */
+
+/* Objetivos. */
+.objectives-details {
+  margin-top: 2rem;
+}
+
+.objectives-details h4 {
+  color: var(--title-color);
+  font-size: 20px;
+  margin-top: 1.5rem;
+  margin: 0 1rem;
+}
+
+.objectives-details p {
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0 1rem;
+}
+/* fim objetivos. */
+
+/*  estatiticas */
+.statistics-session {
+  padding: 2rem;
+  background: var(--color-bg);
+  text-align: center;
+  font-family: var(--font-family);
+}
+
+.statistics-grid {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.stat-item h3 {
+  color: var(--font-primary-color);
+  font-size: 38px;
+  margin-bottom: 0.5rem;
+}
+
+.stat-item p {
+  font-size: 17px;
+  color: var(--font-secondary-color);
+}
+/* Fim estatiticas */
+
+/* beneficios */
+.benefits-session {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  font-family: var(--font-family);
+  background-color: var(--color-secondary);
+}
+
+.benefits-photo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.benefits-text {
+  flex: 1;
+  padding: 2rem;
+  text-align: left;
+}
+
+.benefits-text h3 {
+  color: var(--title-color);
+  font-size: 34px;
+  margin-bottom: 0.5rem;
+}
+
+.benefits-text h4 {
+  color: var(--title-color);
+  font-size: 20px;
+  margin-top: 1.5rem;
+  margin: 0 1rem;
+}
+
+/* Fim beneficios */
+
+/* dIA A DIA */
+.daily-session {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem;
+  font-family: var(--font-family);
+  background-color: var(--color-bg);
+}
+
+.arrow-up {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  transform: scale(0.5);
+}
+/* fim no dia a dia */
+
+/* Estilos para dispositivos pequenos (máx 480px) */
+@media screen and (max-width: 768px) {
+  .logo-home img {
+    width: 40vw;
+    top: 25px;
+    left: 20px;
+  }
+
+  .hero h2 {
+    font-size: 50px;
+    margin-top: -300px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .section-title {
+    font-size: 27px;
+    text-align: center;
+  }
+
+  .section-container-reversed {
+    .section-title {
+      text-align: center;
+    }
+
+    .section-description {
+      text-align: center;
+    }
+  }
+
+  /* FIM container */
+
+  /* Proteja os oceanos conosco */
+  .problem-session {
+    display: block;
+  }
+
+  .problem-photo {
+    width: 90vw;
+    margin-top: 60px;
+  }
+
+  .problem-text {
+    width: 90vw;
+  }
+
+  .problem-text h2 {
+    font-size: 13vw;
+    text-align: center;
+  }
+
+  .problem-text p {
+    text-align: center;
+  }
+
+  /* fim Proteja os oceanos conosco */
+
+  .section-container {
+    display: block;
+    align-items: center;
+    margin: 0;
+  }
+
+  .section-content {
+    margin-top: -35px;
+    text-align: center;
+  }
+
+  .section-content p {
+    font-size: 17px;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  /* Objetivos. */
+  .objectives-session {
+    display: block;
+    margin: 0;
+  }
+
+  .objectives-text {
+    text-align: left;
+  }
+
+  .objectives-text h3 {
+    font-size: 29px;
+  }
+
+  .objectives-details h4 {
+    margin-top: 1.6rem;
+  }
+
+  .objectives-details p {
+    margin-top: 10px;
+  }
+  /* fim objetivos. */
+
+  /*  estatiticas */
+  .statistics-session {
+    padding: 1rem;
+    margin: 0;
+  }
+
+  .statistics-text h1 {
+    font-size: 29px;
+  }
+
+  .statistics-text p {
+    font-size: 18px;
+  }
+
+  .statistics-grid {
+    display: block;
+  }
+
+  .stat-item p {
+    margin-bottom: 13px;
+  }
+  /* Fim estatiticas */
+
+  /* beneficios */
+  .benefits-session {
+    display: block;
+    margin: 0;
+  }
+
+  .benefits-text h4 {
+    margin-top: 10px;
+  }
+  /* Fim beneficios */
+
+  /* dIA A DIA */
+  .daily-session {
+    display: block;
+    padding: 3rem;
+    margin: 0;
+  }
+
+  /* fim no dia a dia */
+}
